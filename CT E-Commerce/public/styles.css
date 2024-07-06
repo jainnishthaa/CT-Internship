@@ -1,0 +1,158 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container h1 {
+  margin: 0;
+  color: #008ecc;
+  cursor: pointer;
+}
+
+.header-container input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.header-container .cart {
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.categories,
+.products {
+  margin-bottom: 40px;
+}
+
+.categories h2,
+.products h2 {
+  margin-bottom: 20px;
+  border-bottom: solid 3px #008ecc;
+  width: fit-content;
+}
+
+.category-list,
+.product-list,
+.cart-detail-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.active {
+  border: 1px solid #008ecc;
+  box-shadow: 0 8px 8px 0 #b5b4b4;
+}
+
+.category-list div {
+  /* flex: 1 1 calc(25% - 20px); */
+  padding: 20px;
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 4px; */
+  text-align: center;
+}
+
+.product-item {
+  border: 1px solid #ededed;
+  border-radius: 10%;
+  width: 227px;
+  height: auto;
+}
+
+.product-detail {
+  display: flex;
+  /* flex: auto; */
+  /* flex-wrap: wr; */
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border: 1px solid black; */
+}
+.product-detail-img {
+  flex: 1;
+  /* border: 1px solid black; */
+}
+.product-detail-img img {
+  width: 80%;
+  height: 80%;
+}
+.product-detail-info{
+  flex: 1;
+  /* border: 1px solid black; */
+}
+
+footer {
+  background-color: #008ecc;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.download-app img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-container input {
+    width: 40%;
+  }
+
+  .category-list div,
+  .product-list div {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+}
